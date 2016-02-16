@@ -9,7 +9,7 @@
                         <img ng-src="{{product.image}}" class="img-responsive">
                     </div>
                     <div class="details">
-                        <a ui-sref="shop.product" ng-click="ctrl.productSrv.product = product"class="title">{{product.name}} <span class="price">/ {{product.price}}</span></a>
+                        <a ui-sref="shop.product" ng-click="ctrl.productSrv.product = product" class="title">{{product.name}} <span class="price">/ {{product.price | currency : "$" : 0}}</span></a>
                     </div>
                 </div>
 

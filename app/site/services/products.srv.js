@@ -7,23 +7,23 @@ function ProductService($state,api){
 	this.products = [];
 	this.product;
 	this.products = [
-		{"name":"The Six", "image":"/assets/img/1.png", "description":"", "category":"Skateboard", "price":120,
+		{"name":"Model 01", "image":"/assets/img/skateboards/1h.png", "image_hero":"/assets/img/skateboards/1.png", "image_vert":"/assets/img/skateboards/1v.png", "description":"", "category":"Skateboard", "price":120,
 		"quantity":1},
-		{"name":"The Vancouver", "image":"/assets/img/2.png", "description":"", "category":"Skateboard", "price":120,
+		{"name":"Model 02", "image":"/assets/img/skateboards/2h.png", "image_hero":"/assets/img/skateboards/2.png", "image_vert":"/assets/img/skateboards/2v.png", "description":"", "category":"Skateboard", "price":120,
 		"quantity":1},
-		{"name":"The Francisco", "image":"/assets/img/3.png", "description":"", "category":"Skateboard", "price":120,
+		{"name":"Model 03", "image":"/assets/img/skateboards/3h.png", "image_hero":"/assets/img/skateboards/3.png", "image_vert":"/assets/img/skateboards/3v.png", "description":"", "category":"Skateboard", "price":120,
 		"quantity":1},
-		{"name":"The Scotia", "image":"/assets/img/4.png", "description":"", "category":"Skateboard", "price":120,
+		{"name":"Model 04", "image":"/assets/img/skateboards/4h.png", "image_hero":"/assets/img/skateboards/4.png", "image_vert":"/assets/img/skateboards/4v.png", "description":"", "category":"Skateboard", "price":120,
 		"quantity":1},
-		{"name":"The Alberta", "image":"/assets/img/9.png", "description":"", "category":"Skateboard", "price":120,
+		{"name":"Model 05", "image":"/assets/img/skateboards/5h.png", "image_hero":"/assets/img/skateboards/5.png", "image_vert":"/assets/img/skateboards/5v.png", "description":"", "category":"Skateboard", "price":120,
 		"quantity":1},
-		{"name":"The Alps", "image":"/assets/img/6.png", "description":"", "category":"Skateboard", "price":120,
+		{"name":"Model 06", "image":"/assets/img/skateboards/6h.png", "image_hero":"/assets/img/skateboards/6.png", "image_vert":"/assets/img/skateboards/6v.png", "description":"", "category":"Skateboard", "price":120,
 		"quantity":1},
-		{"name":"The Mansfield", "image":"/assets/img/13.png", "description":"", "category":"Longboard", "price":120,
+		{"name":"Model L1", "image":"/assets/img/longboards/1h.png", "image_hero":"/assets/img/longboards/1.png", "image_vert":"/assets/img/longboards/1v.png", "description":"", "category":"Longboard", "price":120,
 		"quantity":1},
-		{"name":"The Monreal", "image":"/assets/img/16.png", "description":"", "category":"Longboard", "price":120,
+		{"name":"Model L2", "image":"/assets/img/longboards/2h.png", "image_hero":"/assets/img/longboards/2.png", "image_vert":"/assets/img/longboards/2v.png", "description":"", "category":"Longboard", "price":120,
 		"quantity":1},
-		{"name":"The Monaco", "image":"/assets/img/15.png", "description":"", "category":"Longboard", "price":120,
+		{"name":"Model L3", "image":"/assets/img/longboards/3h.png", "image_hero":"/assets/img/longboards/3.png", "image_vert":"/assets/img/longboards/3v.png", "description":"", "category":"Longboard", "price":120,
 		"quantity":1}
 ];
 	

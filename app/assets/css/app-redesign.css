@@ -58,8 +58,9 @@ body {
 }
 
 .product-image {
-    height: 90%;
-    width: 90%;
+    height: 150%;
+    width: 150%;
+    transform: rotate(90deg);
 }
 
 .product-hero {

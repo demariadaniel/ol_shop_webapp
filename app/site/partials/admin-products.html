@@ -38,21 +38,21 @@
                 <div class="row formrow">
                     <div class=" col-md-4">
                         <!-- Horizontal Image -->
-                        <input class="form-control" placeholder="Horizontal Image" type="text">
+                        <input class="form-control" placeholder="Horizontal Image" ng-model="ctrl.image" type="text">
                     </div>
-                    <div class=" col-md-4">
-                        <!-- Vertical Image -->
-                        <input class="form-control" placeholder="Vertical Image" type="text">
-                    </div>
+               <!--      <div class=" col-md-4">
+                        Vertical Image
+                       <input class="form-control" placeholder="Vertical Image" type="text">
+                    </div> -->
                     <div class=" col-md-4">
                         <!-- Hero Graphic -->
-                        <input class="form-control" placeholder="Hero Graphic" type="text">
+                        <input class="form-control" placeholder="Hero Graphic" ng-model="ctrl.description" type="text">
                     </div>
                 </div>
                 <div class="row formrow">
                     <div class="col-md-12">
                         <!-- Description -->
-                        <textarea class="form-control" placeholder="Description" ng-model="ctrl.description">
+                        <textarea class="form-control" placeholder="Description">
                         </textarea>
                     </div>
                 </div>
@@ -65,6 +65,12 @@
 
         <div class="inventory-ctrl">
             <h3>Manage Inventory</h3>
+            <a ui-sref="admin.add_product" ng-click="ctrl.getProducts()">Get Products</a>
+            <br>
+            <a ui-sref="admin.add_product" ng-click="ctrl.deleteProducts()">Delete All Products</a>
+            <br>
+            <a ui-sref="admin.add_product" ng-click="ctrl.initializeApi()">Set Up API</a>
+            <br>
 
             <table class="table table-hover">
                 <thead>
@@ -81,11 +87,11 @@
                     <tr ng-repeat="product in ctrl.products">
                         <td>{{product.name}}</td>
                         <td>{{product.category}}</td>
-                        <td>{{product.image}}</td>
+                        <td>{{product.quantity}}</td>
                         <td>{{product.price}}</td>
                         <td>{{product.description}}</td>
                         <td class="edit">Edit</td>
-                        <td class="delete">Delete</td>
+                        <td class="delete" ng-click="ctrl.removeProduct(product.id)">Delete</td>
                     </tr>
             </table>
 

@@ -27,6 +27,11 @@ app.config(function($stateProvider, $httpProvider,$urlRouterProvider){
     url:'/shop',
     templateUrl:'site/partials/home.html',
     controller:'shopCtrl as ctrl',
+    resolve: {
+         function(productSrv) {
+         return productSrv.getProducts();
+       }
+    }
   })
   .state('shop.cart',{
       url: '/cart',
@@ -40,7 +45,7 @@ app.config(function($stateProvider, $httpProvider,$urlRouterProvider){
   })
 ;
 
-	$httpProvider.interceptors.push(function(){
+	$httpProvider .interceptors.push(function(){
        return {
            request: function(config) {
                return config;

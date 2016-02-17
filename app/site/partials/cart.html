@@ -22,20 +22,12 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
-                                            <td>{{ctrl.products[0].name}}</td>
-                                            <td>{{ctrl.products[0].price}}</td>
-                                            <td>{{ctrl.products[0].quantity}}</td>
+                                        <tr ng-repeat="item in ctrl.productSrv.cart">
+                                            <td>{{item.name}}</td>
+                                            <td>{{item.price}}</td>
+                                            <td>{{item.quantity}}</td>
                                             <td class="remove">
-                                                <button class="btn-remove">X</button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>Product 2</td>
-                                            <td>$40</td>
-                                            <td>2</td>
-                                            <td class="remove">
-                                                <button class="btn-remove">X</button>
+                                                <button class="btn-remove" ng-click="ctrl.productSrv.removeItem(item)">X</button>
                                             </td>
                                         </tr>
                                     </tbody>

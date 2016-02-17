@@ -43,6 +43,15 @@ function ProductService($state,api){
 		this.cart.splice(item, 1)
 	}
 
+	 this.total = function () {
+	 	var subTotal = 0;
+	 	console.log(this.cart);
+	 	for (i = 0; i < this.cart.length; i++) {
+	 		subTotal += this.cart[i].price;
+	 	}
+	 	console.log(subTotal);
+	 	return subTotal;
+	 }
 
 	this.initializeApi = function(skateboards){
 		console.log(this.skateboards);

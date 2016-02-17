@@ -43,6 +43,11 @@ app.config(function($stateProvider, $httpProvider,$urlRouterProvider){
       templateUrl: "site/partials/product.html",
       controller:'shopCtrl as ctrl',
   })
+  .state('checkout',{
+      url: '/checkout',
+      templateUrl: "site/partials/checkout.html",
+      controller: 'shopCtrl as ctrl',
+  })
 ;
 
 	$httpProvider .interceptors.push(function(){

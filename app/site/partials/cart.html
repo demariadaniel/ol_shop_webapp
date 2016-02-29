@@ -3,7 +3,7 @@
     <div class="Modal-holder" autoscroll="false">
 
 <!-- Cart -->
-            <div class="row">
+            <div class="row cart-w">
                 <div class="twelve columns cart">
 ​
                     <div>
@@ -35,9 +35,11 @@
                             </div>
 ​
                             <div class="row">
-                                <div class="twelve columns">
+                                <div class="col-md-12">
+                                    <div class="pull-right">
                                     <button ng-click="ctrl.$state.go('shop')">Continue Shopping</button>
                                     <button ng-click="ctrl.$state.go('checkout')" class="btn-checkout">Checkout</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>

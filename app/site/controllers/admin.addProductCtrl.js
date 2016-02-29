@@ -6,7 +6,7 @@ function addProductCtrl($stateParams, api, productSrv, $state){
 	ctrl.products = productSrv.products;
 	ctrl.$state = $state;
 	ctrl.categories = productSrv.categories;
-//	ctrl.category = ctrl.categories[0];
+	ctrl.category = "";
 	console.log("Add product control!");
 
 	ctrl.getProducts = function(){
@@ -52,12 +52,11 @@ addProductCtrl.prototype.addProduct = function(){
 	
 	var product = {
 		name: ctrl.name,
-		category: ctrl.category.label,
+		category: ctrl.category,
 		image: ctrl.image,
-		image_hero: ctrl.image_hero,
-		image_vert: ctrl.image_vert,
 		price: ctrl.price,
 		description: ctrl.description,
+		quantity: ctrl.quantity,
 		status: true,
 	}
 

@@ -260,6 +260,10 @@ Cart
     font-size: 11px;
 }
 
+.cart-w {
+    max-width: 650px;
+    margin: auto !important;
+}
 
 /* 
 

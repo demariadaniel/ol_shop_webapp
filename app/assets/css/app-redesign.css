@@ -3,6 +3,10 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+.pull-right {
+    float: right !important;
+}
+
 .footer-love {
     color: #999;
     font-size: 12px;
